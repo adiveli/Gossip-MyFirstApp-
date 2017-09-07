@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+
+
+let themeColor = UIColor(red: 224/255, green: 236/255, blue: 161/255, alpha: 1.0)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+                
+
+        
+        window?.tintColor = themeColor
         return true
     }
 
